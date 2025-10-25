@@ -69,7 +69,7 @@ const categories = {
     ]
   },
 
-    "Water Quantity": {
+  "Water Quantity": {
     "Drinking water availability": [
       "1. <8 hours/day",
       "2. 8–12 hours/day",
@@ -77,7 +77,7 @@ const categories = {
       "4. 16–20 hours/day",
       "5. 24×7 continuous supply"
     ],
-    "Utility water availability": [
+    "utility water(water used for bathing, washing etc.) availability": [
       "1. <8 hours/day",
       "2. 8–12 hours/day",
       "3. 12–16 hours/day",
@@ -115,13 +115,6 @@ const categories = {
       "4. Water quality is checked regularly (e.g., 2–3 times per week), records are well-maintained, and standard corrective actions are implemented when deviations occur.",
       "5. Water quality is checked every day (pH, turbidity, microbial, chemical tests), detailed records are maintained daily, alerts for deviations are in place, and proactive treatment measures ensure safe water consistently."
     ],
-    "Number of water sources to treatment facilities": [
-      "1. All water sources share a single treatment facility (high risk if facility fails); ratio = total sources : 1.",
-      "2. Most sources share one facility, a few have separate treatment; ratio ≈ 3–4 sources : 1 facility.",
-      "3. About half of the sources have separate treatment units; ratio ≈ 2 sources : 1 facility.",
-      "4. Most sources have their own treatment facility; ratio ≈ 1.5 sources : 1 facility.",
-      "5. Each water source has its own dedicated treatment facility (or more); ratio = 1 source : 1 facility or better; highly resilient."
-    ],
     "Water treatment capacity": [
       "1. Treatment capacity meets less than 50% of the campus’s total water demand.",
       "2. Treatment capacity meets about 50–75% of the campus’s total water demand.",
@@ -129,21 +122,21 @@ const categories = {
       "4. Treatment capacity exceeds the campus’s total water demand by up to 1.5×.",
       "5. Treatment capacity is at least twice (2×) the total water demand of the campus."
     ],
-    "Outside drinking water reliance": [
+    "Outside reliance for drinking water": [
       "1. Entire population depends completely on external sources for drinking water.",
       "2. Majority (>75%) rely on external drinking water sources with minimal on-site provision.",
       "3. Moderate reliance (around 50%) on external sources, supported by partial on-site supply.",
       "4. Minor dependence (<25%) on external sources due to well-developed on-site drinking water systems.",
       "5. Fully self-sufficient campus with independent, safe, and sustainable on-site drinking water supply."
     ],
-    "Availability of water filters in campus buildings": [
-      "1. <50% of campus has buildings equipped with functional water filters.",
-      "2. 50-65% of campus has buildings equipped with functional water filters.",
-      "3. 65-80% of campus has buildings equipped with functional water filters.",
-      "4. 80-95% of campus has buildings equipped with functional water filters.",
-      "5. 100% of campus has buildings equipped with functional water filters."
+    "Availability of water purification systems in campus buildings": [
+      "1. <50% of campus has buildings equipped with functional water purification systems.",
+      "2. 50-65% of campus has buildings equipped with functional water purification systems.",
+      "3. 65-80% of campus has buildings equipped with functional water purification systems.",
+      "4. 80-95% of campus has buildings equipped with functional water purification systems.",
+      "5. 100% of campus has buildings equipped with functional water purification systems."
     ],
-    "Water quality inside the water filters": [
+    "Water quality after water purification systems": [
       "1. Water is visibly dark, dirty, has debris or has unpleasant smell.",
       "2. No visible dirt but microscopic impurities (bacterial content).",
       "3. No bacterial content; high TDS, chlorine content, pH etc.",
@@ -158,23 +151,23 @@ const categories = {
     ],
     "Water related illness": [
       "1. No investigation; sick individuals manage illness on their own.",
-      "2. Ad-hoc response; some reporting, but no formal committee or testing.",
+      "2. Ad-hoc response; some reporting, but no formal committee(water warriors) or testing.",
       "3. Campus health officer investigates; water testing may be done after several cases.",
       "4. Dedicated committee formed; investigation and corrective action within 24–48 hours.",
       "5. Rapid, committee-driven response; water testing, treatment, and preventive measures."
     ],
-    "Drinking water environment": [
+    "Environment near water purification devices": [
       "1. Filthy zone: Dirty surroundings, strong odor, garbage/sewage nearby.",
       "2. Poor hygiene zone: Stagnant water, flies, open drains close by.",
       "3. Basic safe zone: No visible filth, but damp, risk of contamination.",
       "4. Clean zone: Dry, ventilated space with minimal contamination risk.",
       "5. Hygienic safe zone: Clean, dry, odor-free, dedicated space for safe drinking water."
     ],
-    "Utility water quality": [
+    "utility water(water used for bathing, washing etc.) quality": [
       "1. Raw dirty water: visibly polluted with debris/odor.",
       "2. Partially treated water: looks clear but has microbes.",
       "3. Treated water: pathogen-free but high TDS/chemicals.",
-      "4. High-quality utility water: near-potable, safe for sensitive non-drinking uses."
+      "4. High-quality utility water(water used for bathing, washing etc.): near-potable, safe for sensitive non-drinking uses."
     ],
     "Water quality transparency": [
       "1. No water quality reports are prepared or shared with residents.",
@@ -186,7 +179,7 @@ const categories = {
   },
 
   "Sustainable Water Management": {
-    "Percentage of water demand met by recycled water": [
+    "Percentage of water demand(55 lpcd) met by recycled water": [
       "1. <5% → Negligible contribution; almost no recycling.",
       "2. 5–15% → Low contribution; limited recycling.",
       "3. 15–30% → Moderate contribution; partial demand met.",
@@ -215,9 +208,16 @@ const categories = {
       "5. Advanced intelligent system with real-time automatic detection, pinpoint localization, and self-activated containment or shut-off."
     ]
   },
-  
+
   "Others": {
-    "Electricity Availability": [
+    "Number of water sources to treatment facilities": [
+      "1. All water sources share a single treatment facility (high risk if facility fails); ratio = total sources : 1.",
+      "2. Most sources share one facility, a few have separate treatment; ratio ≈ 3–4 sources : 1 facility.",
+      "3. About half of the sources have separate treatment units; ratio ≈ 2 sources : 1 facility.",
+      "4. Most sources have their own treatment facility; ratio ≈ 1.5 sources : 1 facility.",
+      "5. Each water source has its own dedicated treatment facility (or more); ratio = 1 source : 1 facility or better; highly resilient."
+    ],
+    "Electricity Availability (Averaged over a month)": [
       "1. Electricity available for <10 hours/day; severe outages, highly disruptive.",
       "2. Electricity available for 10–14 hours/day; frequent outages affect daily activities.",
       "3. Electricity available for 14–18 hours/day; moderate reliability, backup often required.",
