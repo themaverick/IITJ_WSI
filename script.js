@@ -44,6 +44,7 @@ const categories = {
       "5. Funding guided by comprehensive cost-benefit analysis including intergenerational equity; substantial, consistent budget plus innovation funds."
     ]
   },
+
   "Increase community capital": {
     "Water literacy": [
       "1. Little or no understanding of the water cycle; no interest.",
@@ -67,6 +68,45 @@ const categories = {
       "5. Communities play significant, integrated role; local solutions coordinated, monitored, and connected to broader networks; design implemented in close collaboration."
     ]
   },
+
+    "Water Quantity": {
+    "Drinking water availability": [
+      "1. <8 hours/day",
+      "2. 8–12 hours/day",
+      "3. 12–16 hours/day",
+      "4. 16–20 hours/day",
+      "5. 24×7 continuous supply"
+    ],
+    "Utility water availability": [
+      "1. <8 hours/day",
+      "2. 8–12 hours/day",
+      "3. 12–16 hours/day",
+      "4. 16–20 hours/day",
+      "5. 24×7 continuous supply"
+    ],
+    "Demand to supply ratio": [
+      "1. Supply capacity less than the average demand (x); campus likely to face shortages.",
+      "2. Supply capacity equal to the average demand (x); no buffer for peak usage, maintenance, or emergencies.",
+      "3. Supply capacity 1.1 × x; small buffer, may handle minor peaks or short-term issues.",
+      "4. Supply capacity 1.25 × x; moderate buffer, can handle most peaks and minor system failures.",
+      "5. Supply capacity 1.5 × x or more; ample buffer for peak demand, emergencies, and future growth; highly reliable."
+    ],
+    "Adequate water pressure": [
+      "1. <50% of buildings receive adequate water pressure at the top floor; majority of upper floors face shortages.",
+      "2. 50–65% of buildings have adequate top-floor water pressure; high-rises mostly under-served.",
+      "3. 65–80% of buildings have adequate top-floor water pressure; mid-rise buildings mostly fine, high-rises partly affected.",
+      "4. 80–95% of buildings have adequate top-floor water pressure; only the tallest buildings may need booster pumps.",
+      "5. >95–100% of buildings have consistent, reliable top-floor water pressure; all high-rises adequately supplied at all times."
+    ],
+    "Available water sources": [
+      "1. Campus has only one source of water; extremely sensitive to disruptions.",
+      "2. Campus has one primary source with limited backup; high sensitivity.",
+      "3. Campus has two independent sources; moderate sensitivity.",
+      "4. Campus has three to four sources; low sensitivity.",
+      "5. Campus has multiple (>3) major sources; not sensitive to water supply interruptions."
+    ]
+  },
+
   "Water Quality": {
     "Checking water quality at the source": [
       "1. Water quality (pH, turbidity, microbial tests, etc.) is not checked regularly, no records are kept, and no treatment or corrective action is documented.",
@@ -113,74 +153,38 @@ const categories = {
       "1. No one is accountable for maintenance or repair; filters rarely repaired or maintained.",
       "2. Ad-hoc maintenance; repairs take several days, irregular upkeep.",
       "3. Assigned staff handle basic maintenance; issues resolved in 2–3 days.",
-          "4. Campus supervised maintenance; issues fixed within 24 hours with regular checks.",
-    "5. High accountability; issues resolved within 12 hours with strict preventive maintenance."
-  ],
-  "Water related illness": [
-    "1. No investigation; sick individuals manage illness on their own.",
-    "2. Ad-hoc response; some reporting, but no formal committee or testing.",
-    "3. Campus health officer investigates; water testing may be done after several cases.",
-    "4. Dedicated committee formed; investigation and corrective action within 24–48 hours.",
-    "5. Rapid, committee-driven response; water testing, treatment, and preventive measures."
-  ],
-  "Drinking water environment": [
-    "1. Filthy zone: Dirty surroundings, strong odor, garbage/sewage nearby.",
-    "2. Poor hygiene zone: Stagnant water, flies, open drains close by.",
-    "3. Basic safe zone: No visible filth, but damp, risk of contamination.",
-    "4. Clean zone: Dry, ventilated space with minimal contamination risk.",
-    "5. Hygienic safe zone: Clean, dry, odor-free, dedicated space for safe drinking water."
-  ],
-  "Utility water quality": [
-    "1. Raw dirty water: visibly polluted with debris/odor.",
-    "2. Partially treated water: looks clear but has microbes.",
-    "3. Treated water: pathogen-free but high TDS/chemicals.",
-    "4. High-quality utility water: near-potable, safe for sensitive non-drinking uses."
-  ],
-  "Water quality transparency": [
-    "1. No water quality reports are prepared or shared with residents.",
-    "2. Reports are prepared occasionally but not shared with residents.",
-    "3. Reports are shared internally with limited access for residents upon request.",
-    "4. Reports are regularly shared with residents through notices or digital platforms.",
-    "5. Reports are proactively and transparently shared with all residents in real time through accessible public dashboards or regular updates."
-  ]
-},
-  "Water Quantity": {
-    "Drinking water availability": [
-      "1. <8 hours/day",
-      "2. 8–12 hours/day",
-      "3. 12–16 hours/day",
-      "4. 16–20 hours/day",
-      "5. 24×7 continuous supply"
+      "4. Campus supervised maintenance; issues fixed within 24 hours with regular checks.",
+      "5. High accountability; issues resolved within 12 hours with strict preventive maintenance."
     ],
-    "Utility water availability": [
-      "1. <8 hours/day",
-      "2. 8–12 hours/day",
-      "3. 12–16 hours/day",
-      "4. 16–20 hours/day",
-      "5. 24×7 continuous supply"
+    "Water related illness": [
+      "1. No investigation; sick individuals manage illness on their own.",
+      "2. Ad-hoc response; some reporting, but no formal committee or testing.",
+      "3. Campus health officer investigates; water testing may be done after several cases.",
+      "4. Dedicated committee formed; investigation and corrective action within 24–48 hours.",
+      "5. Rapid, committee-driven response; water testing, treatment, and preventive measures."
     ],
-    "Demand to supply ratio": [
-      "1. Supply capacity less than the average demand (x); campus likely to face shortages.",
-      "2. Supply capacity equal to the average demand (x); no buffer for peak usage, maintenance, or emergencies.",
-      "3. Supply capacity 1.1 × x; small buffer, may handle minor peaks or short-term issues.",
-      "4. Supply capacity 1.25 × x; moderate buffer, can handle most peaks and minor system failures.",
-      "5. Supply capacity 1.5 × x or more; ample buffer for peak demand, emergencies, and future growth; highly reliable."
+    "Drinking water environment": [
+      "1. Filthy zone: Dirty surroundings, strong odor, garbage/sewage nearby.",
+      "2. Poor hygiene zone: Stagnant water, flies, open drains close by.",
+      "3. Basic safe zone: No visible filth, but damp, risk of contamination.",
+      "4. Clean zone: Dry, ventilated space with minimal contamination risk.",
+      "5. Hygienic safe zone: Clean, dry, odor-free, dedicated space for safe drinking water."
     ],
-    "Adequate water pressure": [
-      "1. <50% of buildings receive adequate water pressure at the top floor; majority of upper floors face shortages.",
-      "2. 50–65% of buildings have adequate top-floor water pressure; high-rises mostly under-served.",
-      "3. 65–80% of buildings have adequate top-floor water pressure; mid-rise buildings mostly fine, high-rises partly affected.",
-      "4. 80–95% of buildings have adequate top-floor water pressure; only the tallest buildings may need booster pumps.",
-      "5. >95–100% of buildings have consistent, reliable top-floor water pressure; all high-rises adequately supplied at all times."
+    "Utility water quality": [
+      "1. Raw dirty water: visibly polluted with debris/odor.",
+      "2. Partially treated water: looks clear but has microbes.",
+      "3. Treated water: pathogen-free but high TDS/chemicals.",
+      "4. High-quality utility water: near-potable, safe for sensitive non-drinking uses."
     ],
-    "Available water sources": [
-      "1. Campus has only one source of water; extremely sensitive to disruptions.",
-      "2. Campus has one primary source with limited backup; high sensitivity.",
-      "3. Campus has two independent sources; moderate sensitivity.",
-      "4. Campus has three to four sources; low sensitivity.",
-      "5. Campus has multiple (>3) major sources; not sensitive to water supply interruptions."
+    "Water quality transparency": [
+      "1. No water quality reports are prepared or shared with residents.",
+      "2. Reports are prepared occasionally but not shared with residents.",
+      "3. Reports are shared internally with limited access for residents upon request.",
+      "4. Reports are regularly shared with residents through notices or digital platforms.",
+      "5. Reports are proactively and transparently shared with all residents in real time through accessible public dashboards or regular updates."
     ]
   },
+
   "Sustainable Water Management": {
     "Percentage of water demand met by recycled water": [
       "1. <5% → Negligible contribution; almost no recycling.",
@@ -211,6 +215,7 @@ const categories = {
       "5. Advanced intelligent system with real-time automatic detection, pinpoint localization, and self-activated containment or shut-off."
     ]
   },
+  
   "Others": {
     "Electricity Availability": [
       "1. Electricity available for <10 hours/day; severe outages, highly disruptive.",
