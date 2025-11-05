@@ -2,6 +2,7 @@
 const categories = {
   "Water Sensitive Governance": {
     "Knowledge, skills and organisational capacity": [
+      "0. Complete absence of water management skills. No training programs or expertise in place. No dedicated water management staff.",
       "1. Integrated water skills are rare; dominated by engineering. Few training opportunities. Knowledge often lost due to staff turnover.",
       "2. Integrated water skills exist but limited to a few; engineering dominates. Training supports capacity, but turnover causes knowledge loss.",
       "3. Integrated water skills are maintained and updated. Engineering complemented by other disciplines. Some alliances with knowledge brokers.",
@@ -9,6 +10,7 @@ const categories = {
       "5. Integrated water skills are science-informed, actively updated, and supported by a strong learning culture. Multidisciplinary skills applied in projects and decisions. Organisations fund research and capacity building."
     ],
     "Water is key element in campus planning and design": [
+      "0. No water policy exists. Water considerations completely absent from campus planning and design.",
       "1. Water policy beyond basic services is rarely included in planning.",
       "2. Sustainable water policy exists but lacks integrated planning. Regulations exist but are not enforced.",
       "3. Policy acknowledges water’s role. Some coordination with utilities. Early advocacy, guidance, and pilot water-sensitive designs. Regulation enforcement emerging.",
@@ -16,6 +18,7 @@ const categories = {
       "5. Water fully integrated into planning. Governance structures embedded. Policies and regulations include clear water objectives. Water-sensitive design is standard, with ongoing monitoring."
     ],
     "Cross-sector institutional arrangements and processes": [
+      "0. No institutional arrangements exist. Complete dysfunction in water management responsibilities.",
       "1. Institutional arrangements are lacking or unstable. departments act alone with unclear responsibilities.",
       "2. Some arrangements exist; coordination happens only when necessary or enforced.",
       "3. Arrangements are mostly clear and embedded. Some collaboration and platforms promote integration.",
@@ -23,6 +26,7 @@ const categories = {
       "5. Arrangements are mandated and embedded. Full transparency, collaboration at all project stages, cross-sector work, and joint accountability are standard."
     ],
     "Public engagement, participation and transparency": [
+      "0. Complete absence of public communication. No transparency or engagement mechanisms exist.",
       "1. Public rarely informed; little opportunity or support for participation.",
       "2. Public informed on some activities but limited influence; no formal engagement or transparency policy.",
       "3. Public engaged in some governance via meetings, surveys, or consultations.",
@@ -30,6 +34,7 @@ const categories = {
       "5. Frequent, inclusive engagement is formal policy; inhabitants play leadership roles, collaborate with institutions, and help shape decisions."
     ],
     "Leadership, long-term vision and commitment": [
+      "0. Complete absence of leadership involvement in water management; no vision or commitment exists.",
       "1. Leadership focused only on basic services (security and health). No recognition of broader water-sensitive value.",
       "2. Individuals push water-sensitive ideas but lack senior backing and impact.",
       "3. Individuals gain some organisational influence; several leaders support water-sensitive agendas and initiatives.",
@@ -37,6 +42,7 @@ const categories = {
       "5. Senior leaders and departments fully commit to a water-sensitive vision in policy and strategy, with long-term aspirations and resources to achieve it."
     ],
     "Water resourcing and funding to deliver broad societal value": [
+      "0. No funding allocated for water management; complete neglect of water infrastructure.",
       "1. Funding driven by politics, no business case or analysis.",
       "2. Funding decisions based on simple cost reasoning (cheapest option).",
       "3. Funding guided by financial analysis with some societal/environmental consideration; ad hoc budget for water-sensitive practices.",
@@ -47,6 +53,7 @@ const categories = {
 
   "Increase community capital": {
     "Water literacy": [
+      "0. Active resistance to water-related education; widespread misinformation about water systems.",
       "1. Little or no understanding of the water cycle; no interest.",
       "2. Some interest, but limited understanding.",
       "3. General understanding of most of the water cycle and basic sector roles; know what they are paying for.",
@@ -54,6 +61,7 @@ const categories = {
       "5. Deep understanding of water cycle, sector roles, and details of the current situation; strong interest in water-sensitive solutions; outreach co-developed with community and highly attended."
     ],
     "Connection with water": [
+      "0. Active disregard for water resources; widespread vandalism or misuse of water assets.",
       "1. No connection with water assets; water not seen as part of place.",
       "2. Some connection in parts of the campus; mixed perceptions; role in green infrastructure not appreciated.",
       "3. Reasonable connection; water valued for sense of place in many areas; green infrastructure valued mainly for gardens.",
@@ -61,6 +69,7 @@ const categories = {
       "5. Strong connection citywide; water central to sense of place and character; its role in green infrastructure and liveability is widely celebrated."
     ],
     "Shared ownership, management and responsibility of water assets": [
+      "0. Complete abdication of responsibility; active resistance to water management initiatives.",
       "1. No community or hostel ownership; responsibility lies with formal water authorities; no interest in change.",
       "2. Formal authorities hold responsibility; some ad hoc hostels solutions exist but are unmonitored.",
       "3. Hostels/communities have small role; local solutions monitored by authorities to inform planning.",
@@ -71,6 +80,7 @@ const categories = {
 
   "Water Quantity": {
     "Drinking water availability": [
+      "0. No reliable water supply; water available only through tankers or emergency measures.",
       "1. <8 hours/day",
       "2. 8–12 hours/day",
       "3. 12–16 hours/day",
@@ -78,6 +88,7 @@ const categories = {
       "5. 24×7 continuous supply"
     ],
     "utility water(water used for bathing, washing etc.) availability": [
+      "0. Complete absence of utility water supply; residents must arrange their own water.",
       "1. <8 hours/day",
       "2. 8–12 hours/day",
       "3. 12–16 hours/day",
@@ -85,6 +96,7 @@ const categories = {
       "5. 24×7 continuous supply"
     ],
     "Demand to supply ratio": [
+      "0. Severe supply deficit; supply capacity less than 50% of average demand.",
       "1. Supply capacity less than the average demand (x); campus likely to face shortages.",
       "2. Supply capacity equal to the average demand (x); no buffer for peak usage, maintenance, or emergencies.",
       "3. Supply capacity 1.1 × x; small buffer, may handle minor peaks or short-term issues.",
@@ -92,6 +104,7 @@ const categories = {
       "5. Supply capacity 1.5 × x or more; ample buffer for peak demand, emergencies, and future growth; highly reliable."
     ],
     "Adequate water pressure": [
+      "0. No buildings receive adequate water pressure; systemic pressure failure.",
       "1. <50% of buildings receive adequate water pressure at the top floor; majority of upper floors face shortages.",
       "2. 50–65% of buildings have adequate top-floor water pressure; high-rises mostly under-served.",
       "3. 65–80% of buildings have adequate top-floor water pressure; mid-rise buildings mostly fine, high-rises partly affected.",
@@ -99,6 +112,7 @@ const categories = {
       "5. >95–100% of buildings have consistent, reliable top-floor water pressure; all high-rises adequately supplied at all times."
     ],
     "Available water sources": [
+      "0. No reliable water source available; completely dependent on emergency water supply.",
       "1. Campus has only one source of water; extremely sensitive to disruptions.",
       "2. Campus has one primary source with limited backup; high sensitivity.",
       "3. Campus has two independent sources; moderate sensitivity.",
@@ -109,6 +123,7 @@ const categories = {
 
   "Water Quality": {
     "Checking water quality at the source": [
+      "0. No water quality monitoring system exists; complete absence of testing or documentation.",
       "1. Water quality (pH, turbidity, microbial tests, etc.) is not checked regularly, no records are kept, and no treatment or corrective action is documented.",
       "2. Water quality is checked occasionally, some basic records exist, but monitoring is inconsistent and corrective measures are not systematic.",
       "3. Water quality is checked periodically (e.g., weekly or monthly), records are partially maintained, and minor corrective actions are taken as needed.",
@@ -116,13 +131,15 @@ const categories = {
       "5. Water quality is checked every day (pH, turbidity, microbial, chemical tests), detailed records are maintained daily, alerts for deviations are in place, and proactive treatment measures ensure safe water consistently."
     ],
     "Water treatment capacity": [
-      "1. Treatment capacity meets less than 50% of the campus’s total water demand.",
+      "0. No water treatment facility exists; raw untreated water supplied directly.",
+      "1. Treatment capacity meets less than 50% of the campus's total water demand.",
       "2. Treatment capacity meets about 50–75% of the campus’s total water demand.",
       "3. Treatment capacity roughly equals the campus’s total water demand (1× need).",
       "4. Treatment capacity exceeds the campus’s total water demand by up to 1.5×.",
       "5. Treatment capacity is at least twice (2×) the total water demand of the campus."
     ],
     "Outside reliance for drinking water": [
+      "0. No reliable drinking water source, neither internal nor external; unsafe water consumption.",
       "1. Entire population depends completely on external sources for drinking water.",
       "2. Majority (>75%) rely on external drinking water sources with minimal on-site provision.",
       "3. Moderate reliance (around 50%) on external sources, supported by partial on-site supply.",
@@ -130,6 +147,7 @@ const categories = {
       "5. Fully self-sufficient campus with independent, safe, and sustainable on-site drinking water supply."
     ],
     "Availability of water purification systems in campus buildings": [
+      "0. No functional water purification systems exist in any campus building.",
       "1. <50% of campus has buildings equipped with functional water purification systems.",
       "2. 50-65% of campus has buildings equipped with functional water purification systems.",
       "3. 65-80% of campus has buildings equipped with functional water purification systems.",
@@ -137,12 +155,14 @@ const categories = {
       "5. 100% of campus has buildings equipped with functional water purification systems."
     ],
     "Water quality after water purification systems": [
+      "0. Purification systems completely non-functional or contaminating water further.",
       "1. Water is visibly dark, dirty, has debris or has unpleasant smell.",
       "2. No visible dirt but microscopic impurities (bacterial content).",
       "3. No bacterial content; high TDS, chlorine content, pH etc.",
       "4. Clean, safe drinking water."
     ],
     "Water filter maintenance": [
+      "0. Complete abandonment of maintenance; broken filters causing water contamination.",
       "1. No one is accountable for maintenance or repair; filters rarely repaired or maintained.",
       "2. Ad-hoc maintenance; repairs take several days, irregular upkeep.",
       "3. Assigned staff handle basic maintenance; issues resolved in 2–3 days.",
@@ -150,6 +170,7 @@ const categories = {
       "5. High accountability; issues resolved within 12 hours with strict preventive maintenance."
     ],
     "Water related illness": [
+      "0. Active denial of water-related health issues; suppression of illness reports.",
       "1. No investigation; sick individuals manage illness on their own.",
       "2. Ad-hoc response; some reporting, but no formal committee(water warriors) or testing.",
       "3. Campus health officer investigates; water testing may be done after several cases.",
@@ -157,6 +178,7 @@ const categories = {
       "5. Rapid, committee-driven response; water testing, treatment, and preventive measures."
     ],
     "Environment near water purification devices": [
+      "0. Hazardous conditions: Direct contamination sources, sewage mixing with supply, severe health risks.",
       "1. Filthy zone: Dirty surroundings, strong odor, garbage/sewage nearby.",
       "2. Poor hygiene zone: Stagnant water, flies, open drains close by.",
       "3. Basic safe zone: No visible filth, but damp, risk of contamination.",
@@ -164,12 +186,14 @@ const categories = {
       "5. Hygienic safe zone: Clean, dry, odor-free, dedicated space for safe drinking water."
     ],
     "utility water(water used for bathing, washing etc.) quality": [
+      "0. Severely contaminated water causing immediate health risks; sewage contamination present.",
       "1. Raw dirty water: visibly polluted with debris/odor.",
       "2. Partially treated water: looks clear but has microbes.",
       "3. Treated water: pathogen-free but high TDS/chemicals.",
       "4. High-quality utility water(water used for bathing, washing etc.): near-potable, safe for sensitive non-drinking uses."
     ],
     "Water quality transparency": [
+      "0. Deliberate misrepresentation of water quality data; concealment of contamination incidents.",
       "1. No water quality reports are prepared or shared with residents.",
       "2. Reports are prepared occasionally but not shared with residents.",
       "3. Reports are shared internally with limited access for residents upon request.",
@@ -180,6 +204,7 @@ const categories = {
 
   "Sustainable Water Management": {
     "Percentage of water demand(55 lpcd) met by recycled water": [
+      "0. No water recycling system exists.",
       "1. <5% → Negligible contribution; almost no recycling.",
       "2. 5–15% → Low contribution; limited recycling.",
       "3. 15–30% → Moderate contribution; partial demand met.",
@@ -187,6 +212,7 @@ const categories = {
       "5. >50% → Very high contribution; major portion of demand met."
     ],
     "Rainwater harvesting": [
+      "0. No rainwater harvesting system in place.",
       "1. <10% → Very poor implementation; negligible harvesting.",
       "2. 10–30% → Low implementation; minor portion of roof used.",
       "3. 30–50% → Moderate implementation; significant portion harvested.",
@@ -194,6 +220,7 @@ const categories = {
       "5. >75% → Excellent implementation; almost entire roof harvested."
     ],
     "Storage Capacity": [
+      "0. No dedicated water storage capacity available.",
       "1. <1 day → Very low storage; emergency supply insufficient.",
       "2. 1–2 days → Low storage; limited backup.",
       "3. 2–4 days → Moderate storage; some buffer available.",
@@ -201,6 +228,7 @@ const categories = {
       "5. >7 days → Excellent storage; long-term backup available."
     ],
     "Leakage detection": [
+      "0. No leakage detection system or process in place; leaks go undetected until major issues occur.",
       "1. No automatic leakage detection; leaks identified only through manual checks or complaints.",
       "2. Basic manual monitoring using visible indicators or periodic inspections to spot leaks.",
       "3. Semi-automatic detection using basic sensors that flag anomalies for manual verification.",
@@ -211,6 +239,7 @@ const categories = {
 
   "Others": {
     "Number of water sources to treatment facilities": [
+      "0. No treatment facilities available for any water source.",
       "1. All water sources share a single treatment facility (high risk if facility fails); ratio = total sources : 1.",
       "2. Most sources share one facility, a few have separate treatment; ratio ≈ 3–4 sources : 1 facility.",
       "3. About half of the sources have separate treatment units; ratio ≈ 2 sources : 1 facility.",
@@ -218,6 +247,7 @@ const categories = {
       "5. Each water source has its own dedicated treatment facility (or more); ratio = 1 source : 1 facility or better; highly resilient."
     ],
     "Electricity Availability (Averaged over a month)": [
+      "0. Extremely unreliable power supply with outages lasting days; no backup systems.",
       "1. Electricity available for <10 hours/day; severe outages, highly disruptive.",
       "2. Electricity available for 10–14 hours/day; frequent outages affect daily activities.",
       "3. Electricity available for 14–18 hours/day; moderate reliability, backup often required.",
@@ -225,6 +255,7 @@ const categories = {
       "5. Electricity available for >20 hours/day; highly reliable supply, minimal interruptions."
     ],
     "Air Conditioners (efficiency)": [
+      "0. Extremely inefficient or malfunctioning AC systems causing severe water wastage.",
       "1. AC units use open-loop or water-cooled systems with no recycling or recovery; high continuous water loss.",
       "2. Basic cooling systems with minimal water management; no condensate reuse or efficiency controls.",
       "3. Some water-efficient features present, such as partial condensate collection or optimized cooling cycles.",
@@ -232,6 +263,7 @@ const categories = {
       "5. All AC systems are high-efficiency, closed-loop, or air-cooled units with active water recovery and reuse mechanisms."
     ],
     "Air Conditioners (accountability)": [
+      "0. Complete absence of AC management; units run without any control or maintenance.",
       "1. ACs run continuously regardless of occupancy or need; no usage monitoring or operational control.",
       "2. Minimal scheduling or regulation of use; limited awareness of water or energy impact.",
       "3. Moderate discipline—ACs turned off manually after use, with some awareness among users.",
@@ -239,6 +271,7 @@ const categories = {
       "5. Strict operation protocols in place; automated controls and strong accountability for water-conscious usage."
     ],
     "Carbon footprint in water-related processes": [
+      "0. Actively harmful practices increasing carbon emissions; environmental damage evident.",
       "1. No measurement or awareness of carbon emissions from water use; no mitigation actions.",
       "2. Minimal recognition of carbon impact; only occasional or reactive actions taken.",
       "3. Carbon footprint is partially measured or estimated; some measures implemented to reduce emissions.",
@@ -261,13 +294,28 @@ function makeId(str) {
   return String(str).replace(/\s+/g, '_').replace(/[^a-zA-Z0-9_-]/g, '');
 }
 
-// Dynamically render categorized form (modified to use numeric option values)
+let currentTab = 0;
+const categoryArray = Object.keys(categories);
+
+// Dynamically render categorized form with tabs
 window.onload = function() {
   const formContainer = document.getElementById("formContainer");
+  const tabNavigation = document.getElementById("tabNavigation");
 
+  // Create tab buttons
+  categoryArray.forEach((categoryName, index) => {
+    const tabButton = document.createElement("button");
+    tabButton.textContent = categoryName;
+    tabButton.classList.add("tab-button");
+    tabButton.onclick = () => switchTab(index);
+    tabNavigation.appendChild(tabButton);
+  });
+
+  // Create category divs
   for (const [categoryName, fields] of Object.entries(categories)) {
     const categoryDiv = document.createElement("div");
     categoryDiv.classList.add("category");
+    categoryDiv.id = makeId(categoryName);
 
     const heading = document.createElement("h3");
     heading.textContent = categoryName;
@@ -279,18 +327,14 @@ window.onload = function() {
       const safeId = `${makeId(categoryName)}-${makeId(fieldName)}`;
       label.setAttribute("for", safeId);
 
-      // If a hint exists for this indicator, attach it to the label (hover) and add a small info icon.
+      // Handle hints
       const hintText = hints[categoryName] && hints[categoryName][fieldName];
       if (hintText) {
-        // set native tooltip on the label
         label.title = hintText;
-
-        // add a visible info icon with the same tooltip
         const info = document.createElement("span");
         info.className = "hint";
         info.textContent = " ℹ";
         info.title = hintText;
-        // append the info icon immediately after label text
         label.appendChild(info);
       }
 
@@ -316,14 +360,72 @@ window.onload = function() {
 
     formContainer.appendChild(categoryDiv);
   }
+
+  // Show first tab
+  switchTab(0);
+  updateNavigationButtons();
 };
+
+// Switch between tabs
+function switchTab(index) {
+  if (index < 0 || index >= categoryArray.length) return;
+  
+  currentTab = index;
+  
+  // Update tab buttons
+  const tabButtons = document.querySelectorAll('.tab-button');
+  tabButtons.forEach((button, i) => {
+    button.classList.toggle('active', i === index);
+  });
+  
+  // Update category divs
+  const categories = document.querySelectorAll('.category');
+  categories.forEach((category, i) => {
+    category.classList.toggle('active', i === index);
+  });
+  
+  updateNavigationButtons();
+}
+
+// Navigate to previous tab
+function prevTab() {
+  if (currentTab > 0) {
+    switchTab(currentTab - 1);
+  }
+}
+
+// Navigate to next tab
+function nextTab() {
+  if (currentTab < categoryArray.length - 1) {
+    switchTab(currentTab + 1);
+  }
+}
+
+// Update navigation button states
+function updateNavigationButtons() {
+  const prevButton = document.getElementById('prevButton');
+  const nextButton = document.getElementById('nextButton');
+  const submitButton = document.getElementById('submitButton');
+  
+  prevButton.style.display = currentTab === 0 ? 'none' : 'inline-block';
+  nextButton.style.display = currentTab === categoryArray.length - 1 ? 'none' : 'inline-block';
+  submitButton.style.display = currentTab === categoryArray.length - 1 ? 'inline-block' : 'none';
+}
 
 // Show selected results and compute scores
 function showResult() {
-  const outputEl = document.getElementById("output");
+  const modal = document.getElementById("results-modal");
+  const resultsBody = document.getElementById("results-body");
+  const gaugeFill = document.getElementById("gauge-fill");
+  const gaugeValue = document.getElementById("gauge-value");
+  const overallScoreEl = document.getElementById("overall-score");
+  
   let overallSum = 0;
   let overallCount = 0;
-  let resultLines = [];
+  let tableRows = [];
+
+  // Clear previous results
+  resultsBody.innerHTML = "";
 
   for (const [categoryName, fields] of Object.entries(categories)) {
     let categorySum = 0;
@@ -333,33 +435,69 @@ function showResult() {
       const selectId = `${makeId(categoryName)}-${makeId(fieldName)}`;
       const select = document.getElementById(selectId);
       if (!select) {
-        outputEl.innerText = "Unexpected error: form element missing.";
+        alert("Unexpected error: form element missing.");
         return;
       }
       const val = select.value;
       const totalOptions = Number(select.dataset.totalOptions || 0);
 
       if (!val) {
-        outputEl.innerText = "Please fill all fields before submitting.";
+        alert("Please fill all fields before submitting.");
         return;
       }
 
       const numeric = Number(val);
-      const indicatorScore = numeric / totalOptions; // in range (0,1]
-      categorySum += indicatorScore;
-      categoryCount += 1;
-      overallSum += indicatorScore;
-      overallCount += 1;
+      const indicatorScore = numeric / totalOptions;
+        // Directly add to overall score - no category averaging
+        overallSum += indicatorScore;
+        overallCount += 1;
+        // Still track category totals for display
+        categorySum += indicatorScore;
+        categoryCount += 1;
     }
 
     const categoryAvg = categoryCount > 0 ? (categorySum / categoryCount) : 0;
-    // show as fraction and percent
-    resultLines.push(`${categoryName}: ${(categoryAvg).toFixed(3)} (${(categoryAvg*100).toFixed(1)}%)`);
+    const categoryPercent = (categoryAvg * 100).toFixed(1);
+    
+    // Add row to table
+    const row = document.createElement("tr");
+    row.innerHTML = `
+        <td>${categoryName} (${categoryCount} criteria)</td>
+      <td>${categoryAvg.toFixed(3)}</td>
+      <td>${categoryPercent}%</td>
+    `;
+    resultsBody.appendChild(row);
   }
 
   const overallAvg = overallCount > 0 ? (overallSum / overallCount) : 0;
-  resultLines.push("");
-  resultLines.push(`Overall Water Sensitivity Score: ${(overallAvg).toFixed(3)} (${(overallAvg*100).toFixed(1)}%)`);
+  const percentScore = (overallAvg * 100).toFixed(1);
 
-  outputEl.innerText = resultLines.join("\n");
+  // Add overall score row
+  const overallRow = document.createElement("tr");
+  overallRow.style.fontWeight = "bold";
+  overallRow.innerHTML = `
+      <td>Overall Score (${overallCount} total criteria)</td>
+    <td>${overallAvg.toFixed(3)}</td>
+    <td>${percentScore}%</td>
+  `;
+  resultsBody.appendChild(overallRow);
+  
+  // Update and show gauge
+  gaugeFill.style.width = `${percentScore}%`;
+  gaugeValue.textContent = `${percentScore}%`;
+  
+  // Set the gauge fill color based on the score
+  let hue = Math.min(120, (percentScore * 1.2)); // 120 is green in HSL
+  gaugeFill.style.backgroundColor = `hsl(${hue}, 75%, 45%)`;
+
+  // Show modal with animation
+  modal.style.display = "block";
+  setTimeout(() => modal.classList.add("show"), 10);
+}
+
+// Close results modal
+function closeResults() {
+  const modal = document.getElementById("results-modal");
+  modal.classList.remove("show");
+  setTimeout(() => modal.style.display = "none", 300);
 }

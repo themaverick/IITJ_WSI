@@ -9,12 +9,50 @@
 <body>
   <h2>IITJ-WSI</h2>
 
-  <div id="formContainer"></div>
+  <div class="tab-container">
+    <div class="tab-navigation" id="tabNavigation"></div>
+    <div class="tab-content" id="formContainer"></div>
+  </div>
 
-  <br><br>
-  <button onclick="showResult()">Submit</button>
+  <div class="action-container">
+    <button onclick="prevTab()" id="prevButton" class="nav-button">Previous</button>
+    <button onclick="nextTab()" id="nextButton" class="nav-button">Next</button>
+    <button onclick="showResult()" id="submitButton" class="submit-button">Submit</button>
+  </div>
 
-  <div id="output"></div>
+  <div id="results-modal" class="modal">
+    <div class="modal-content">
+      <h3>Water Sensitivity Index Results</h3>
+      <div class="results-container">
+        <table id="results-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Score</th>
+              <th>Percentage</th>
+            </tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+        
+        <div id="gauge-container">
+          <div class="gauge">
+            <div class="gauge-body">
+              <div id="gauge-fill"></div>
+            </div>
+            <div id="gauge-value" class="gauge-value"></div>
+            <div class="gauge-labels">
+              <span>0%</span>
+              <span>100%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="overall-score" id="overall-score"></div>
+      </div>
+      <button onclick="closeResults()" class="close-button">Close</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
