@@ -95,7 +95,7 @@ const categories = {
       "4. 16–20 hours/day",
       "5. 24×7 continuous supply"
     ],
-    "Demand to supply ratio": [
+    "Supply to demand  ratio": [
       "0. Severe supply deficit; supply capacity less than 50% of average demand.",
       "1. Supply capacity less than the average demand (x); campus likely to face shortages.",
       "2. Supply capacity equal to the average demand (x); no buffer for peak usage, maintenance, or emergencies.",
@@ -196,20 +196,20 @@ const categories = {
       "0. Deliberate misrepresentation of water quality data; concealment of contamination incidents.",
       "1. No water quality reports are prepared or shared with residents.",
       "2. Reports are prepared occasionally but not shared with residents.",
-      "3. Reports are shared internally with limited access for residents upon request.",
+      "3. Reports are shared internally (or externally ocassionally) with limited access for residents upon request.",
       "4. Reports are regularly shared with residents through notices or digital platforms.",
       "5. Reports are proactively and transparently shared with all residents in real time through accessible public dashboards or regular updates."
     ]
   },
 
   "Sustainable Water Management": {
-    "Percentage of water demand(55 lpcd) met by recycled water": [
+    "Percentage of water recycled": [
       "0. No water recycling system exists.",
       "1. <5% → Negligible contribution; almost no recycling.",
       "2. 5–15% → Low contribution; limited recycling.",
       "3. 15–30% → Moderate contribution; partial demand met.",
-      "4. 30–50% → High contribution; significant portion of demand met.",
-      "5. >50% → Very high contribution; major portion of demand met."
+      "4. 30–50% → High contribution; significant portion.",
+      "5. >50% → Very high contribution; major portion."
     ],
     "Rainwater harvesting": [
       "0. No rainwater harvesting system in place.",
